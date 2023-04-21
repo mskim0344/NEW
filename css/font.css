@@ -1,0 +1,117 @@
+body{
+    font-family: 'pretendard';}
+a{
+    color: black;
+    text-decoration:none;
+  }
+      .text-white{
+        color:white           
+    }
+    .text-center{
+        text-align: center;
+    }
+    .d-none{
+        display:none;
+    }
+    .d-flex{
+        display: flex;
+    }
+h1{font-size: 50px;}    
+.hd{
+    border: 50px solid #ccc;
+    padding: 1em 2em;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right:0;
+    left: 1rem;
+    top: 1rem;
+    background-color: rgb(255,255,255,0.8);
+}  
+#gnb li{
+    padding-left: 1em;
+    font-weight: 200;
+}#gnb li a{
+    transition: 0.5s;
+}
+#gnb li::after{
+    content:"";
+    display: block;
+    height:2px;
+    background-color: rgb(242, 6, 6);
+    width:0;
+    transition: 0.5s;
+    }
+    #gnb li:nth-child(1)::after{
+        background-color: #140192;}
+    #gnb li:nth-child(1):hover a{
+        background-color: rgb(225, 246, 73);
+        }
+    #gnb li:nth-child(2)::after{
+        background-color: #219b92;}
+    #gnb li:nth-child(2):hover a{
+        background-color: rgb(225, 246, 73);
+        }
+    #gnb li:nth-child(3)::after{
+        background-color: #27e923;}
+    #gnb li:nth-child(3):hover a{
+        background-color: rgb(225, 246, 73);
+        }
+                  
+            
+
+#gnb li:hover::after{
+    width: 100%;
+    
+}
+.child1, .child2, .child3{
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-items: center;
+}
+.main .child1{
+    background-color: rgb(240, 105, 213);
+}
+.main .child2{
+    background-color: rgb(157, 40, 241);
+}
+.main .child3{
+    background-color: rgb(88, 184, 240);
+}
+.ft{
+    padding: 2em;
+}
+.sns{
+    justify-content: center;
+}
+.sns li{padding: 8px; border-radius: 0px;}
+
+.sns li:first-child{
+    background-color: rgb(43, 23, 198);
+}
+.sns li:nth-child(2){
+    background-color: rgb(211, 81, 202);
+}
+.sns li:last-child{
+    background-color: rgb(255, 0, 0);}
+    /* svg 다루기 */
+    .hd h1 svg{
+        height: 1.5rem;
+        display: block;
+    }
+    .hd h1 a{
+        display: block;
+    }
+    .hd h1 a:hover svg path:nth-child(2){
+        fill:red;
+    }
+    .hd h1 a:hover svg path:nth-child(3){
+        fill: blue;
+    }
+    .hd h1 a:hover svg path:nth-child(5){
+        fill: aqua;
+    }
+    .hd h1 a:hover svg path:nth-child(4){
+        fill: rgb(228, 243, 20);
+    }
+
